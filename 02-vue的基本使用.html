@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/vue.js"></script>
+    <script>
+        window.onload=function(){
+      var vm=new Vue({
+          //el:element select DOM选择器 
+          //取值是符合css元素选择器语法规范的字符串
+          el:"#app",   //vue事例和页面容器的关联
+          data:{
+              msg:"msg数据"
+          }
+      });
+      console.log(vm);
+    }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h2 id="h2dom">{{msg}}</h2>
+        <input id="inputdom" v-model="msg">
+        <h3>hehehh</h3>
+    </div>
+</body>
+</html>
